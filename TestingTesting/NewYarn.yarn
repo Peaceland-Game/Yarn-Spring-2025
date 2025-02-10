@@ -4,7 +4,7 @@ position: -117,-205
 Hello HELLLOOOO World!
 
 -> More options here!
-    Wow that's crazy!
+    Wow that's really something...
     -> Go somewhere else
         <<jump HelloThereNode>>
     -> Go here
@@ -13,7 +13,7 @@ Hello HELLLOOOO World!
 -> I'm amazed!
 ===
 
-title: HelloThereNode
+title: HelloThereNode1YouGuy
 position: -113,16
 ---
 Hello there!
