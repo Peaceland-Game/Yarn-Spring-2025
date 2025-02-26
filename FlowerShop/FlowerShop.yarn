@@ -21,11 +21,10 @@ position: 0,137
 ---
 OH- sorry, I'm {$playerName}. I mean, I'm good thanks. How are you?
 -> I'm good, thanks. What can I do for you today?
-    <<jump NPCQuestion>>
 -> ...uhh, fine thanks. Anything I can help you with?
-    <<jump NPCQuestion>>
 -> Doing OK. How can I help you today?
-    <<jump NPCQuestion>>
+
+<<jump NPCQuestion>>
 ===
 
 title: NPCQuestion
@@ -37,18 +36,15 @@ Well, I'd like to get some flowers...
 ===
 
 title: FloristQuestion
-// COMMENT: not sure if I did this right, please feel free to adjust
 position: 39,550
 ---
 They're for my girlfriend! She likes flowers.
 -> Aww, how sweet - I thought I saw you two walking around town square the other day, you make a very cute couple. What kind of flowers does she like?
-    <<jump NPCNervousRamble>>
 -> Well we can do personalized bouquets here, what flowers would she like?
-    <<jump NPCNervousRamble>>
 -> Great. Good for you. What flowers does she like?
-    <<jump NPCNervousRamble>>
 -> OK, what does she like?
-    <<jump NPCNervousRamble>>
+
+<<jump NPCNervousRamble>>
 ===
 
 title: NPCNervousRamble
@@ -64,5 +60,4 @@ position: 94,953
 ---
 Oh uh... can I get both roses and daisies? I think that'd be nice.
 -> Sure!
-    <<jump Gameplay>>
 ===
