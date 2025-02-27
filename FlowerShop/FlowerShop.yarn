@@ -11,7 +11,7 @@ title: Intro
 position: 7,-42
 ---
 ...
--> Uh... hello there?
+-> Uh... {$playerName}?
     <<jump NPCFirstDialogue>>
 ===
 
@@ -19,7 +19,7 @@ position: 7,-42
 title: NPCFirstDialogue
 position: 0,137
 ---
-OH- sorry, I'm {$playerName}. I mean, I'm good thanks. How are you?
+OH- sorry, I mean, I'm good thanks. How are you?
 -> I'm good, thanks. What can I do for you today?
 -> ...uhh, fine thanks. Anything I can help you with?
 -> Doing OK. How can I help you today?
