@@ -43,15 +43,18 @@ position: -158,359
 title: OfficialTangentPathTwo
 position: 171,357
 ---
-<<set $officialVandalism = true>>
+<<set $officialVandalism to true>>
 Of course, I completely understand your trepidation. Please know that the council unilaterally condemns the actions of those vandals. Now is not the time for such attacks on our community. You have our full support, and it would be our honor to have your flowers adorn our steps.
 -> Thank you.
+    <<jump OfficialTangentPathTwoConti>>
 -> Thanks {$officialName}, that means a lot.
+    <<jump OfficialTangentPathTwoConti>>
 ===
 
-title: OfficialTangentPathTwo(2)
+title: OfficialTangentPathTwoConti
 position: 175,496
 ---
+// I'm gonna guess this is not a great name for this node, please feel free to rename it if is!
 Please let us know what damages you've incurred. I could speak to Jorge about our community restoration budget and see what the council can do to help?
 -> I'd really appreciate that, thank you. If it's not too much trouble, of course.
 	Not at all! I'll let you know what he says. Now, about the flowers…
@@ -77,6 +80,8 @@ position: 15,711
 I'd like two bouquets of carnations and any wildflowers you may have.
 // Option could be made for player, depending on dialogue choices made in the above sequences. Leaving as player's choice for now, but if we implement systems like this then come back to this spot.
 -> You're in luck! We just got some fresh carnations in, haven't had any since before the blockades. I'll put those together for you right now.
+    <<jump OfficialOrderComplete>>
 -> Take a look at any of the premade bouquets you see and let me know if they are to your liking. 
 // Also dependent on if premade bouqets are an implemented gameplay feature -- if Official's order is next after Andrei, then this would/could be the introduction of this mechanic
+    <<jump OfficialOrderComplete>>
 ===
