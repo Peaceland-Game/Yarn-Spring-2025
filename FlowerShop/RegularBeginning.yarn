@@ -1,0 +1,59 @@
+title: RegularStart
+---
+<<declare $regularName = "Aria">>
+
+-> Oh, {$regularName}, it's good to see you. How are you?
+    ___, hello. I'm doing well, how about you?
+    -> I'm well, thank you.
+        <<jump ConversationBegin>>
+    -> I'm doing alright, though work is helping.
+        <<jump ConversationBegin>>
+    -> Handing in there, getting by for now.
+        <<jump ConversationBegin>>
+===
+
+title: ConversationBegin
+---
+Glad to hear that. I'm sorry about the storefront, do you want me to talk to someone about that?
+-> Oh no, thank you though. I'll get to it later.
+    <<jump OrderBegin>>
+===
+
+title: OrderBegin
+---
+Alright. Well if you change your mind, let me know.
+-> Of course. Now, what can I help you with?
+    <<jump OrderRequest>>
+===
+
+title: OrderRequest
+---
+I was just stopping by to order a bouquet. The girls wanted something nice for the anniversary.
+-> Oh that's right! It had completely slipped my mind, but I had some ideas for it.
+    <<jump BuyOrder>>
+===
+
+title: BuyOrder
+---
+That's great! Whatever you were thinking, I'll buy it.
+-> {$regularName}, please. I can just give it to you all. I'll be there regardless.
+    <<jump PaymentRefusal>>
+-> Are you sure? I was going to go all out.
+    <<jump PaymentRefusal>>
+-> Alright. Let me get it ready for you.
+    <<jump PaymentRefusal>>
+===
+
+title: PaymentRefusal
+---
+No no, not today. Today, you are going to leet me pay for this with no complaints.
+-> Is there really no arguing this?
+    <<jump Nope>>
+===
+
+title: Nope
+---
+*kind smile* Nope!
+-> ... I'll get it ready for you then.
+    <<jump RegularOrderComplete>>
+===
