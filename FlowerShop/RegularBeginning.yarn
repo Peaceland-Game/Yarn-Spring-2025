@@ -33,7 +33,7 @@ I'm sorry, ___. Is there anything I can do to help?
 title: ConversationBegin
 ---
 Glad to hear that. I'm sorry about the storefront, do you want me to talk to someone about that?
--> Oh no, thank you though. I'll get to it later.
+-> Oh no, thank you. I'll get to it later.
     <<jump OrderBegin>>
 ===
 
@@ -53,14 +53,14 @@ title: WorriedOrderBegin
 
 title: OrderRequest
 ---
-I was just stopping by to order a bouquet. The girls wanted something nice for the anniversary.
--> Oh that's right! It had completely slipped my mind, but I had some ideas for it.
+I was just stopping by to order a bouquet. The girls wanted something nice for the memorial.
+-> Oh yes! I had some ideas for one, I was just going to drop off aa bouqueet later tonight.
     <<jump BuyOrder>>
 ===
 
 title: BuyOrder
 ---
-That's great! Whatever you were thinking, I'll buy it.
+That's great! Whatever you were thinking, I'll buy it off of you.
 -> {$regularName}, please. I can just give it to you all. I'll be there regardless.
     <<jump PaymentRefusal>>
 -> Are you sure? I was going to go all out.

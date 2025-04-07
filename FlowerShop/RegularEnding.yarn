@@ -25,7 +25,7 @@ Hey, I know you said you were alright, but remember we're here for you.
 
 title: FriendsIntuition
 ---
-Call it a friend's intuition. You're part of the Peace Group, none of us are alone.
+Call it a friend's intuition. You're part of the Peace Group, you don't have to do this alone.
 -> {$regularName}, I promise I'm okay. Work has been a good distraction.
     <<jump AlrightThen>>
 ===
@@ -39,5 +39,5 @@ I understand, but the second that changes, you let us know, alright?
 
 title: RegularEnding
 ---
-Me too, ___. Me too.
+Absolutely, ___. I'll see you later.
 ===
