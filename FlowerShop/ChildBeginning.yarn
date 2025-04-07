@@ -38,7 +38,7 @@ position: 75,-169
 ---
 Um, I think these are all out of my price range… is there anything I can order to be made?
     -> Since it’s her birthday, I’ll do a small one special for you.
-    ->I guess I can put something together that will fit into your budget.
+    ->I can put something together that will fit into your budget.
     <<jump OrderTaking>>
 ===
 
@@ -72,7 +72,7 @@ title: SadFlower2
 position: -154,506
 ---
 -> Although, they have been selling a lot recently... I’ll probably need some for *friend*’s order later…
-    Um, is every-
+    Um, is everything alrig-
     <<jump GameplayTransition>>
 ===
 
