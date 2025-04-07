@@ -2,6 +2,8 @@ title: OfficialOrderComplete
 position: 2,-62
 ---
 These are wonderful! They'll make our Founder's Day even more special.
+// Could be dependent on how well player interaction goes.
+// Also could integrate price into convo. Ala "that'll be {$price}"
 -> I'm so glad to hear.
     <<jump OfficialEndingOne>>
 -> Excellent!
@@ -14,12 +16,12 @@ title: OfficialEndingOne
 position: -128,150
 ---
 *{$officialName} pays*
-// I don't know if $officialVandalism is carrying over the correct value from the OfficialBeginning file. I (Josh) would love some help making sure this lines up if it's possible! 
+// I don't know if $officialVandalism is carrying over the correct value from the OfficialBeginning file. 
 // If it isn't in sync, then the Yarn will always play through the second ending (for if the vandalism hasn't come up yet.)
-<<if $officialVandalism is true>>
+<<if $officialVandalism is false>>
     <<jump OfficialEndingTwo>>
-<<else>>
-    Thank you again, I'll make sure the council knows of your work here today!
+<<elseif $officialVandalism is true>> // Is this bad syntax? Someone yell at me if this is bad syntax.
+    Thank you again, I'll make sure the council knows of your work here today! // Official should address Florist here but it feels wrong for him to call her by first name. I'd reccomend finding a last name for the Florist.
     -> Sure thing, Councilman. Have a good one.
     -> Thank you {$officialName}! I look out for the bouquets on my walk home.
 <<endif>>
