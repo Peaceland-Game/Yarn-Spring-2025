@@ -1,7 +1,8 @@
 
 title: CloseFriendStart
 ---
-Hey... I just wanted to check in. How are you holding up today?
+Hey... I just wanted to check in. 
+How are you holding up today?
 -> I'm doing well
     <<jump DoingWell>>
 -> I'm ok
@@ -28,7 +29,8 @@ So hey, can I place an order?
 
 title: TalkAboutIt
 ---
-I know it's tough, but you've already pushed so hard for so long. I know you can get through today.
+I know it's tough, but you've already pushed so hard for so long. 
+I know you can get through today.
 Is there anything I can do to help?
 -> Not really, I just need some time
     <<jump SomeTime>>
@@ -73,7 +75,8 @@ I'm sorry... Do you want to talk about it?
 
 title: DoingWell
 ---
-I'm glad to hear that. Let me know if there's anything you want to talk about.
+I'm glad to hear that. 
+Let me know if there's anything you want to talk about.
 Can I place an order? It's a bit of an odd request.
 -> Sure, what can I get you?
     <<jump Order>>
@@ -81,8 +84,9 @@ Can I place an order? It's a bit of an odd request.
 
 title: Order
 ---
-I'm buying you flowers. Make a nice bouquet for yourself, go all out, and enjoy it. For me.
--> ___, I really don't have the time
+I'm buying you flowers. 
+Make a nice bouquet for yourself, go all out, and enjoy it. For me.
+-> Jeta, I really don't have the time
     <<jump DontHaveTime>>
 -> I can't let you do that
     <<jump CantLetYou>>
@@ -113,7 +117,8 @@ Either way, you're getting flowers.
 
 title: Speechless
 ---
-You don't need to say anything. Just let me pay you and accept the order.
+You don't need to say anything. 
+Just let me pay you and accept the order.
 -> Alright, fine
     <<jump Alright>>
 ===
@@ -121,6 +126,7 @@ You don't need to say anything. Just let me pay you and accept the order.
 title: Alright
 ---
 Great! Have fun with it, I'd imagine you need something like that right now.
+/// need to fix this conversation area, it stretches for too long with very little player choice
 -> I'll try. Oh, how's Agim handling things?
 <<jump PartnerInquiry>>
 ===
