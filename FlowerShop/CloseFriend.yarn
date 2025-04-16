@@ -3,6 +3,7 @@ title: CloseFriendStart
 ---
 
 <<declare $closeFriendName = "Jeta">>
+<<declare $FloristName = "Mira">>
 
 <<wait  1>>
 {$closeFriendName}: Hey... I just wanted to check in. 
@@ -131,6 +132,7 @@ title: Alright
 ---
 {$closeFriendName}: Great! Have fun with it, I'd imagine you need something like that right now.
 -> I'll try. Oh, how's Agim handling things?
+-> Thank you. Now, I'll see you later, I need to work.
 <<jump PartnerInquiry>>
 ===
 
