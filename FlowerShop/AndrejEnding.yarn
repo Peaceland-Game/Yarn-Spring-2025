@@ -10,7 +10,8 @@ position: 0,190
 ---
 {$customerName}: And, uh… I just wanted to say, I saw what happened outside. 
 {$customerName}: I'm really sorry that happened to you. You don't deserve that, especially today.
--> Thank you, {$customerName}. I appreciate that.
+
+{$FloristName}: Thank you, {$customerName}. I appreciate that.
     <<jump NPCOffer>>
 ===
 

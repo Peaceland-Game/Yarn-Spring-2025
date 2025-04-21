@@ -28,7 +28,8 @@ title: DontTalkAboutIt
 ---
 {$closeFriendName}: Alright, I understand. Let me know if that changes.
 {$closeFriendName}: So hey, can I place an order?
--> Sure, what can I get you?
+
+{$FloristName}: Sure, what can I get you?
     <<jump Order>>
 ===
 
@@ -47,9 +48,10 @@ title: TalkAboutIt
 
 title: BeingHere
 ---
-{$closeFriendName}: Anytime, Mira. I'll always be here.
+{$closeFriendName}: Anytime, {$FloristName}. I'll always be here.
 {$closeFriendName}: So hey, can I place an order?
--> Sure, what can I get you?
+
+{$FloristName}: Sure, what can I get you?
     <<jump Order>>
 ===
 
@@ -57,7 +59,8 @@ title: Realistic
 ---
 {$closeFriendName}: I understand, and of course. Anything for you.
 {$closeFriendName}: So hey, can I place an order?
--> Sure, what can I get you?
+
+{$FloristName}: Sure, what can I get you?
     <<jump Order>>
 ===
 
@@ -65,7 +68,8 @@ title: SomeTime
 ---
 {$closeFriendName}: Alright, I understand.
 {$closeFriendName}: So hey, can I make an order?
--> Sure, what would you like?
+
+{$FloristName}: Sure, what would you like?
     <<jump Order>>
 ===
 
@@ -83,7 +87,8 @@ title: DoingWell
 {$closeFriendName}: I'm glad to hear that. 
 {$closeFriendName}: Let me know if there's anything you want to talk about.
 {$closeFriendName}: Can I place an order? It's a bit of an odd request.
--> Sure, what can I get you?
+
+{$FloristName}: Sure, what can I get you?
     <<jump Order>>
 ===
 
@@ -124,7 +129,8 @@ title: Speechless
 ---
 {$closeFriendName}: You don't need to say anything. 
 {$closeFriendName}: Just let me pay you and accept the order.
--> Alright, fine.
+
+{$FloristName}: Alright, fine.
     <<jump Alright>>
 ===
 
@@ -186,21 +192,23 @@ title: SoundsNiceWrapUp
 {$closeFriendName}: It is, he always comes back in a good mood.
 {$closeFriendName}: But that's enough about Agim!
 {$closeFriendName}: I'll leave you to get to work, I'm sure you'll be getting lots of orders today.
--> Oh I'd imagine. I'll see you later then!
+
+{$FloristName}: Oh I'd imagine. I'll see you later then!
     <<jump SoundsNiceEnd>>
 ===
 
 title: SoundsNiceEnd
 ---
-{$closeFriendName}: See you, Mira!
+{$closeFriendName}: See you, {$FloristName}!
 (END OF CONVERSATION)
 ===
 
 title: DayVisit
 ---
 {$closeFriendName}: Yes, just for the day. 
-{$closeFriendName}: He leaves early in the morning, then will be back a little after the Sun sets.
--> Seems like a nice little trip. Will you not be going with him?
+{$closeFriendName}: He leaves early in the morning, then will be back a little after the sun sets.
+
+{$FloristName}: Seems like a nice little trip. Will you not be going with him?
     <<jump SoloVisit>>
 ===
 
@@ -209,7 +217,8 @@ title: SoloVisit
 {$closeFriendName}: No, he prefers to go alone. 
 {$closeFriendName}: He spends the day recounting their time together and likes to do that on his own.
 {$closeFriendName}: He's brought me before, but I think he just doesn't want me to see him cry.
--> Well it sounds like it means a lot to him.
+
+{$FloristName}: Well it sounds like it means a lot to him.
     <<jump MeansALot>>
 ===
 
@@ -217,15 +226,17 @@ title: MeansALot
 ---
 {$closeFriendName}: It does, and I don't take any offense to it. 
 {$closeFriendName}: I've got my own plans to visit the memorial anyway.
--> Oh yes, I plan to close shop that day.
+
+{$FloristName}: Oh yes, I plan to close shop that day.
     <<jump CloseShop>>
 ===
 
-title: ClosEshop
+title: CloseShop
 ---
 {$closeFriendName}: I would hope so!
 {$closeFriendName}: I'd hate for you to work that day.
--> Of course, even I can't imagine that!
+
+{$FloristName}: Of course, even I can't imagine that!
     <<jump OldFriendConvoEnd>>
 ===
 
@@ -233,7 +244,8 @@ title: OldFriendConvoEnd
 ---
 {$closeFriendName}: Well then, I'll leave you to it! 
 {$closeFriendName}: Do show me what you make yourself at some point!
--> Thank you, I will!
+
+{$FloristName}: Thank you, I will!
     <<jump Done>>
 ===
 title: Done
