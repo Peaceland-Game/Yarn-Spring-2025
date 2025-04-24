@@ -145,7 +145,7 @@ title: Alright
 
 title: NoWinning
 ---
-Nope! And please try to have fun with it. I think it'd be good for you.
+{$closeFriendName}: Nope! And please try to have fun with it. I think it'd be good for you.
 -> I'll try. Oh, how's Agim handling things?
     <<jump PartnerInquiry>>
 -> Thank you. Now, I'll see you later, I need to work.
@@ -154,7 +154,7 @@ Nope! And please try to have fun with it. I think it'd be good for you.
 
 title: ThankYou
 ---
-Of course. And please try to have fun with it. I think it'd be good for you.
+{$closeFriendName}: Of course. And please try to have fun with it. I think it'd be good for you.
 -> I'll try. Oh, how's Agim handling things?
     <<jump PartnerInquiry>>
 -> Thank you. Now, I'll see you later, I need to work.
